@@ -10,89 +10,69 @@
 </head>
 
 <body>
-    <div class="bgSVs">
-        <img src="imagens/paleta de cores roxo.png" alt="cor roxo">
-        <img src="imagens/paleta de cores roxo.png" alt="roxo">
-    </div>
-
-    <div id="portfolio">
+    <main id="portfolio">
 
         <!--header-->
-        <img src="imagens/nat.jpg" alt="foto de perfil" class="photo" width="220px">
+        <img src="imagens/nat.jpg" alt="foto de perfil" class="photo" width="220">
         <h1 class="name">Natalia Dias Fernandes</h1>
         <h4 class="position">Análise e Desenvolvimento de Sistemas</h4>
-        <div class="contactBox flex">
-            <div class="email flex">
+        <ul class="contactBox flex">
+            <li>
                 <i class="fa-solid fa-envelope"></i>
-                <p>Nataliadiasfernande@gmail.com</p>
-            </div>
-            <div class="location flex">
+                <span>Nataliadiasfernande@gmail.com</span>
+            </li>
+            <li>
                 <i class="fa-solid fa-city"></i>
-                <p>Campinas-SP</p>
-            </div>
-            <div class="phone flex">
+                <span>Campinas-SP</span>
+            </li>
+            <li>
                 <i class="fa-solid fa-phone"></i>
-                <p>+55(19)99780-4477</p>
-            </div>
-        </div>
-        <div class="line"></div>
+                <span>+55(19)99780-4477</span>
+            </li>
+        </ul>
+        <hr>
         <!-- Content    -->
-        <div class="contentBox flex">
-            <div class="left">
-                <div class="about"></div>
-                <h4>Sobre mim</h4>
-                <p>Sou uma estudante de Análise e Desenvolvimento de Sistemas</p>
-                <div class="edu">
+        <section class="contentBox">
+            <div class="about">
+                <div>
+                    <h4>Sobre mim</h4>
+                    <span>Sou uma estudante de Análise e Desenvolvimento de Sistemas</span>
+                </div>
+                <div>
                     <h4>Educação</h4>
                     <h5>Centro Universitário Unimetrocamp- Wyden</h5>
-                    <span></span>
-                    <p>Formação em andamento, Julho 2026</p>
+                    <span class="list">Formação em andamento, Julho 2026</span>
                 </div>
-                <div class="exp">
+                <div>
                     <h4>Experiência</h4>
                     <h5>Em busca da minha primeira experiência profissional</h5>
-                    <span></span>
-                    <p>Desenvolvi projetos acadêmicos</p>
-                    <h5>Algum projeto ou assunto aqui</h5>
+                    <span class="list">Tenho interesse em Desenvolvimento Web, Mobile e Desktop.</span>
+                    <span class="list">Frontend e Backend.</span>
                 </div>
 
             </div>
-            <div class="line"></div>
-            <div class="right">
+            <div>
                 <h4>Skills & Tools</h4>
-                <div class="DSbox">
+                <div>
                     <h5>Ferramenta para Design</h5>
-                    <div class="DSnames">
-                        <p>Figma</p>
-                    </div>
+                    <span class="highlighted">Figma</span>
                 </div>
-                <div class="LBox">
+                <div>
                     <h5>Linguagem de Programação</h5>
-                    <div class="Lnames">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>Javascript</p>
-                        <p>Python</p>
-                        <p>C</p>
-
-                    </div>
+                    <span class="highlighted">HTML</span>
+                    <span class="highlighted">CSS</span>
+                    <span class="highlighted">Javascript</span>
+                    <span class="highlighted">Python</span>
+                    <span class="highlighted">C</span>
                 </div>
-                <div class="ESBox">
+                <div>
                     <h5>Banco de Dados</h5>
-                    <div class="ESnames">
-                        <p>Postgress</p>
-                        <p>MySql</p>
-                    </div>
+                    <span class="highlighted">Postgress</span>
+                    <span class="highlighted">MySql</span>
                 </div>
             </div>
-        </div>
-
-        <div class="projetos">
-            <h4 class="position">Projetos Acadêmicos</h4>
-
-        </div>
-
-    </div>
+        </section>
+    </main>
 </body>
 
 </html>
