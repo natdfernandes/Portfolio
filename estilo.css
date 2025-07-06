@@ -46,7 +46,7 @@ body {
     margin: 0.8rem 0;
 }
 
-.position {
+.section-title {
     display: inline-block;
     font-weight: 400;
     background: var(--cor6);
