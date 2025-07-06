@@ -135,6 +135,26 @@ span.highlighted {
     margin: 0.3rem 0;
 }
 
+.project-content {
+    display: flex;
+    margin-top: 1rem;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.project-content>img {
+    border-radius: 0.5rem;
+    max-width: 50%;
+    height: auto;
+}
+
+.project-content h2 {
+    margin-bottom: 1rem;
+}
+
+.project-content h3 {
+    margin: 0.5rem 0;
+}
 
 /*media Queries */
 
