@@ -136,6 +136,8 @@ span.highlighted {
 }
 
 .project-content {
+    background-color: #230456;
+    border-radius: 3px;
     display: flex;
     margin-top: 1rem;
     text-align: justify;
