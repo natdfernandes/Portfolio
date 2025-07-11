@@ -142,7 +142,12 @@ span.highlighted {
     gap: 1rem;
 }
 
+.project-content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
 .project-content>img {
+    align-self: center;
     border-radius: 0.5rem;
     max-width: 50%;
     height: auto;
