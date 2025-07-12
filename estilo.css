@@ -194,4 +194,9 @@ footer {
     .contentBox>div:first-child {
         border: none;
     }
+
+    .project-content,
+    .project-content:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
 }
