@@ -8,6 +8,7 @@
     --cor5: #0f172a;
     --cor6: #6528f7;
     --cor7: #10002b;
+    --cor8: #1D004F;
 }
 
 * {
@@ -57,7 +58,7 @@ body {
 
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -66,6 +67,14 @@ body {
 .contactBox {
     margin-top: 1rem;
     list-style: none;
+}
+
+.contactBox a {
+    color: var(--cor1);
+}
+
+.contactBox a:hover {
+    color: var(--cor6);
 }
 
 hr {
@@ -137,7 +146,7 @@ span.highlighted {
 
 .project-content {
     padding: 1rem;
-    background-color: #1D004F;
+    background-color: var(--cor8);
     border-radius: 0.5rem;
     display: flex;
     margin-top: 1rem;
@@ -168,13 +177,13 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: var(--cor5);
+    padding: 1rem;
 }
 
 /*media Queries */
 
 @media (max-width: 800px) {
     #portfolio {
-
         margin: auto;
         border-radius: 0;
     }
