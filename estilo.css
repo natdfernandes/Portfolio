@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+
     --cor1: #fff;
     --cor2: #a3a3a3;
     --cor3: #334155;
@@ -8,6 +9,7 @@
     --cor5: #0f172a;
     --cor6: #6528f7;
     --cor7: #10002b;
+    --cor8: #1D004F;
 }
 
 * {
@@ -46,7 +48,7 @@ body {
     margin: 0.8rem 0;
 }
 
-.position {
+.section-title {
     display: inline-block;
     font-weight: 400;
     background: var(--cor6);
@@ -57,7 +59,7 @@ body {
 
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -66,6 +68,16 @@ body {
 .contactBox {
     margin-top: 1rem;
     list-style: none;
+}
+
+.contactBox a,
+a.documentacao {
+    color: var(--cor1);
+}
+
+.contactBox a:hover,
+a.documentacao:hover {
+    color: var(--cor6);
 }
 
 hr {
@@ -135,12 +147,46 @@ span.highlighted {
     margin: 0.3rem 0;
 }
 
+.project-content {
+    padding: 1rem;
+    background-color: var(--cor8);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-top: 1rem;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.project-content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.project-content>img {
+    align-self: center;
+    border-radius: 0.5rem;
+    max-width: 50%;
+    height: auto;
+}
+
+.project-content h2 {
+    margin-bottom: 1rem;
+}
+
+.project-content h3 {
+    margin: 0.5rem 0;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 1rem;
+}
 
 /*media Queries */
 
 @media (max-width: 800px) {
     #portfolio {
-
         margin: auto;
         border-radius: 0;
     }
@@ -159,5 +205,10 @@ span.highlighted {
 
     .contentBox>div:first-child {
         border: none;
+    }
+
+    .project-content,
+    .project-content:nth-child(odd) {
+        flex-direction: column-reverse;
     }
 }
