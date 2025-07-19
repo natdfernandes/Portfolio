@@ -173,6 +173,12 @@ span.highlighted {
     margin: 0.5rem 0;
 }
 
+.documentacao {
+    color: var(--cor1);
+}
+
+
+
 footer {
     font-family: 'Roboto', sans-serif;
     text-align: center;
