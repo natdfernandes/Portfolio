@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+
     --cor1: #fff;
     --cor2: #a3a3a3;
     --cor3: #334155;
@@ -69,11 +70,13 @@ body {
     list-style: none;
 }
 
-.contactBox a {
+.contactBox a,
+a.documentacao {
     color: var(--cor1);
 }
 
-.contactBox a:hover {
+.contactBox a:hover,
+a.documentacao:hover {
     color: var(--cor6);
 }
 
@@ -172,12 +175,6 @@ span.highlighted {
 .project-content h3 {
     margin: 0.5rem 0;
 }
-
-.documentacao {
-    color: var(--cor1);
-}
-
-
 
 footer {
     font-family: 'Roboto', sans-serif;
