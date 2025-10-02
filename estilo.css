@@ -27,7 +27,7 @@ body {
 #portfolio {
     max-width: 768px;
     margin: 4rem auto;
-    padding: 2.2rem;
+    padding-bottom: 2.2rem;
     background: var(--cor7);
     box-shadow: 0 0 6px 1px #00000045;
     border-radius: 20px;
@@ -37,12 +37,35 @@ body {
     z-index: 1;
 }
 
+#portfolio>* {
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
     margin-top: 1rem;
+}
+
+#portfolio>div.plano-de-fundo {
+    position: relative;
+    overflow: clip;
+    border-radius: .5rem;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+img.imagem-de-fundo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .5;
+    filter: blur(0.1rem);
 }
 
 /* Hide the images by default */
